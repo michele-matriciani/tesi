@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.22)  23 APR 2014 16:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.22)  28 APR 2014 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,6 +370,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box29
 )
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count107
 \lst@gtempboxa=\box30
@@ -443,24 +447,24 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \sinistra=\skip55
 \corpo=\skip56
 \pagina=\skip57
-
-No file tesi.aux.
+ (./tesi.aux)
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Info: Redefining \it@ocap on input line 86.
-LaTeX Info: Redefining \it@ccap on input line 86.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Info: Redefining \it@ocap on input line 87.
+LaTeX Info: Redefining \it@ccap on input line 87.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
@@ -528,136 +532,115 @@ e
 File: images/logounipg.png Graphic file (type png)
 
 <use images/logounipg.png>
-Package pdftex.def Info: images/logounipg.png used on input line 102.
+Package pdftex.def Info: images/logounipg.png used on input line 103.
 (pdftex.def)             Requested size: 209.08885pt x 295.88046pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logounipg.png>] [
-1]
-No file tesi.toc.
+1] (./tesi.toc [2
+
+] [3])
 \tf@toc=\write3
 \openout3 = `tesi.toc'.
 
 
+
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 163.
+less on input line 164.
 
-(./capitoli/intro.tex [2
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
- [3
-
-]
-<images/intro/kinect.png, id=25, 1764.5925pt x 736.7525pt>
-File: images/intro/kinect.png Graphic file (type png)
-
-<use images/intro/kinect.png>
-Package pdftex.def Info: images/intro/kinect.png used on input line 24.
-(pdftex.def)             Requested size: 153.64253pt x 64.14641pt.
-
-<images/intro/oculus-rift.jpg, id=27, 578.16pt x 433.62pt>
-File: images/intro/oculus-rift.jpg Graphic file (type jpg)
-
-<use images/intro/oculus-rift.jpg>
-Package pdftex.def Info: images/intro/oculus-rift.jpg used on input line 25.
-(pdftex.def)             Requested size: 153.64253pt x 115.22633pt.
-
-<images/intro/wii.jpg, id=28, 3051.4pt x 2308.625pt>
-File: images/intro/wii.jpg Graphic file (type jpg)
-
-<use images/intro/wii.jpg>
-Package pdftex.def Info: images/intro/wii.jpg used on input line 26.
-(pdftex.def)             Requested size: 153.64253pt x 116.213pt.
-)
+(./capitoli/intro.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4 <./images/intro/kinect.png> <./images/intro/oculus-rift.jpg> <./images/intro
-/wii.jpg>] (./capitoli/realta-virtuale.tex
+[4] [5
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+
+<images/intro/kinect.png, id=31, 1764.5925pt x 736.7525pt>
+File: images/intro/kinect.png Graphic file (type png)
+
+<use images/intro/kinect.png>
+Package pdftex.def Info: images/intro/kinect.png used on input line 24.
+(pdftex.def)             Requested size: 153.64253pt x 64.14641pt.
+
+<images/intro/oculus-rift.jpg, id=33, 578.16pt x 433.62pt>
+File: images/intro/oculus-rift.jpg Graphic file (type jpg)
+
+<use images/intro/oculus-rift.jpg>
+Package pdftex.def Info: images/intro/oculus-rift.jpg used on input line 25.
+(pdftex.def)             Requested size: 153.64253pt x 115.22633pt.
+
+<images/intro/wii.jpg, id=34, 3051.4pt x 2308.625pt>
+File: images/intro/wii.jpg Graphic file (type jpg)
+
+<use images/intro/wii.jpg>
+Package pdftex.def Info: images/intro/wii.jpg used on input line 26.
+(pdftex.def)             Requested size: 153.64253pt x 116.213pt.
+) [6] [7 <./images/intro/kinect.png> <./images/intro/oculus-rift.jpg> <./images
+/intro/wii.jpg>] (./capitoli/realta-virtuale.tex
 Capitolo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--24
-
- []
-
 [1
 
 
-]) [2]
+] [2]) [3]
 Capitolo 2.
-(./capitoli/openCv.tex [3
+(./capitoli/openCv.tex [4
 
-] [4]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 57.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [5]
-
-LaTeX Warning: Reference `features' on page 6 undefined on input line 72.
-
-<images/openCv/haar_features.jpg, id=52, 321.2pt x 272.01625pt>
+] [5] [6] [7]
+<images/openCv/haar_features.jpg, id=67, 321.2pt x 272.01625pt>
 File: images/openCv/haar_features.jpg Graphic file (type jpg)
 
 <use images/openCv/haar_features.jpg>
-Package pdftex.def Info: images/openCv/haar_features.jpg used on input line 75.
+Package pdftex.def Info: images/openCv/haar_features.jpg used on input line 78.
 
 (pdftex.def)             Requested size: 192.05609pt x 162.65067pt.
-
-
-LaTeX Warning: Reference `volti' on page 6 undefined on input line 80.
-
-[6] <images/openCv/haar.png, id=58, 335.2525pt x 203.76125pt>
+ [8] [9 <./images/openCv/haar_features.jpg>] <images/openCv/haar.png, id=76, 33
+5.2525pt x 203.76125pt>
 File: images/openCv/haar.png Graphic file (type png)
 
 <use images/openCv/haar.png>
-Package pdftex.def Info: images/openCv/haar.png used on input line 84.
+Package pdftex.def Info: images/openCv/haar.png used on input line 87.
 (pdftex.def)             Requested size: 192.05609pt x 116.72652pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 94.
 
-
-LaTeX Warning: Reference `features' on page 7 undefined on input line 88.
-
-[7 <./images/openCv/haar_features.jpg> <./images/openCv/haar.png>])
-(./capitoli/openGl.tex
-<images/openGL/OpenGL_logo.jpg, id=62, 354.57469pt x 182.93344pt>
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [10 <./images/openCv/haar.png>] [11]) (./capitoli/openGl.tex
+<images/openGL/OpenGL_logo.jpg, id=85, 354.57469pt x 182.93344pt>
 File: images/openGL/OpenGL_logo.jpg Graphic file (type jpg)
 
 <use images/openGL/OpenGL_logo.jpg>
 Package pdftex.def Info: images/openGL/OpenGL_logo.jpg used on input line 6.
 (pdftex.def)             Requested size: 268.87737pt x 138.7238pt.
- [8 <./images/openGL/OpenGL_logo.jpg>])
-(./capitoli/ogre.tex
+ [12
+
+ <./images/openGL/OpenGL_logo.jpg>]
+[13]) (./capitoli/ogre.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<images/ogre/ogrelogo-small.jpg, id=67, 540.0175pt x 320.19624pt>
+<images/ogre/ogrelogo-small.jpg, id=92, 540.0175pt x 320.19624pt>
 File: images/ogre/ogrelogo-small.jpg Graphic file (type jpg)
 
 <use images/ogre/ogrelogo-small.jpg>
 Package pdftex.def Info: images/ogre/ogrelogo-small.jpg used on input line 7.
 (pdftex.def)             Requested size: 230.46965pt x 136.65079pt.
+ [14
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
-
- []
-
-[9] [10 <./images/ogre/ogrelogo-small.jpg>]) (./capitoli/frustum.tex [11]
+ <./images/ogre/ogrelogo-small.jpg>]
+[15]) [16] (./capitoli/frustum.tex [17]
 Capitolo 3.
-
-LaTeX Warning: Reference `pipeline' on page 12 undefined on input line 5.
-
-<images/frustum/opengl-pipeline.png, id=77, 1078.0275pt x 576.1525pt>
+<images/frustum/opengl-pipeline.png, id=109, 1078.0275pt x 576.1525pt>
 File: images/frustum/opengl-pipeline.png Graphic file (type png)
 
 <use images/frustum/opengl-pipeline.png>
@@ -665,33 +648,25 @@ Package pdftex.def Info: images/frustum/opengl-pipeline.png used on input line
 9.
 (pdftex.def)             Requested size: 268.87737pt x 143.70369pt.
 
-
-LaTeX Warning: Reference `trans-pipe' on page 12 undefined on input line 16.
-
-<images/frustum/transform-pipeline.png, id=78, 708.6475pt x 88.33pt>
+<images/frustum/transform-pipeline.png, id=110, 708.6475pt x 88.33pt>
 File: images/frustum/transform-pipeline.png Graphic file (type png)
 
 <use images/frustum/transform-pipeline.png>
 Package pdftex.def Info: images/frustum/transform-pipeline.png used on input li
 ne 20.
 (pdftex.def)             Requested size: 268.87737pt x 33.51453pt.
+ [18
 
-
-LaTeX Warning: Reference `cartesian' on page 12 undefined on input line 24.
-
-<images/frustum/cartesian.png, id=79, 437.635pt x 360.34625pt>
+ <./images/frustum/opengl-pipeline.png>] <images/frustum/cartesian.png, id=115,
+ 437.635pt x 360.34625pt>
 File: images/frustum/cartesian.png Graphic file (type png)
 
 <use images/frustum/cartesian.png>
 Package pdftex.def Info: images/frustum/cartesian.png used on input line 27.
 (pdftex.def)             Requested size: 115.23482pt x 94.88097pt.
- [12
-
- <./images/frustum/opengl-pipeline.png>]
-
-LaTeX Warning: Reference `cam-default' on page 13 undefined on input line 34.
-
-<images/frustum/camera-default.jpg, id=84, 1027.84pt x 736.7525pt>
+ [19 <./images/frustum/transform-pipeline.png> <./images/frustum/cartesian.png>
+]
+<images/frustum/camera-default.jpg, id=121, 1027.84pt x 736.7525pt>
 File: images/frustum/camera-default.jpg Graphic file (type jpg)
 
 <use images/frustum/camera-default.jpg>
@@ -699,19 +674,16 @@ Package pdftex.def Info: images/frustum/camera-default.jpg used on input line 3
 8.
 (pdftex.def)             Requested size: 192.05609pt x 137.65735pt.
 
-
-LaTeX Warning: Reference `view-frustum' on page 13 undefined on input line 44.
-
-<images/frustum/view_frustum.png, id=85, 72.27pt x 33.84645pt>
+<images/frustum/view_frustum.png, id=122, 72.27pt x 33.84645pt>
 File: images/frustum/view_frustum.png Graphic file (type png)
 
 <use images/frustum/view_frustum.png>
 Package pdftex.def Info: images/frustum/view_frustum.png used on input line 48.
 
 (pdftex.def)             Requested size: 192.05609pt x 89.95139pt.
- [13 <./images/frustum/transform-pipeline.png> <./images/frustum/cartesian.png>
-]
-<images/frustum/orto-projection.png, id=91, 511.9125pt x 230.8625pt>
+ [20 <./images/frustum/camera-default.jpg> <./images/frustum/view_frustum.png>]
+
+<images/frustum/orto-projection.png, id=126, 511.9125pt x 230.8625pt>
 File: images/frustum/orto-projection.png Graphic file (type png)
 
 <use images/frustum/orto-projection.png>
@@ -719,25 +691,16 @@ Package pdftex.def Info: images/frustum/orto-projection.png used on input line
 60.
 (pdftex.def)             Requested size: 192.05609pt x 86.61197pt.
 
-<images/frustum/persp-projection.png, id=92, 471.7625pt x 230.8625pt>
+<images/frustum/persp-projection.png, id=127, 471.7625pt x 230.8625pt>
 File: images/frustum/persp-projection.png Graphic file (type png)
 
 <use images/frustum/persp-projection.png>
 Package pdftex.def Info: images/frustum/persp-projection.png used on input line
  62.
 (pdftex.def)             Requested size: 192.05609pt x 93.98492pt.
-
-
-LaTeX Warning: Reference `orto' on page 14 undefined on input line 66.
-
-[14 <./images/frustum/camera-default.jpg> <./images/frustum/view_frustum.png>]
-
-LaTeX Warning: Reference `example1' on page 15 undefined on input line 71.
-
-
-LaTeX Warning: Reference `example2' on page 15 undefined on input line 71.
-
-<images/frustum/frustum_cubes.png, id=97, 963.6pt x 542.025pt>
+ [21 <./images/frustum/orto-projection.png> <./images/frustum/persp-projection.
+png>]
+<images/frustum/frustum_cubes.png, id=131, 963.6pt x 542.025pt>
 File: images/frustum/frustum_cubes.png Graphic file (type png)
 
 <use images/frustum/frustum_cubes.png>
@@ -745,7 +708,7 @@ Package pdftex.def Info: images/frustum/frustum_cubes.png used on input line 74
 .
 (pdftex.def)             Requested size: 230.46965pt x 129.63376pt.
 
-<images/frustum/frustum_homogeneous.png, id=98, 963.6pt x 542.025pt>
+<images/frustum/frustum_homogeneous.png, id=132, 963.6pt x 542.025pt>
 File: images/frustum/frustum_homogeneous.png Graphic file (type png)
 
 <use images/frustum/frustum_homogeneous.png>
@@ -753,73 +716,52 @@ Package pdftex.def Info: images/frustum/frustum_homogeneous.png used on input l
 ine 76.
 (pdftex.def)             Requested size: 230.46965pt x 129.63376pt.
 
-
-LaTeX Warning: Reference `example3' on page 15 undefined on input line 80.
-
-<images/frustum/frustum_view.png, id=99, 457.96358pt x 447.31326pt>
+<images/frustum/frustum_view.png, id=133, 457.96358pt x 447.31326pt>
 File: images/frustum/frustum_view.png Graphic file (type png)
 
 <use images/frustum/frustum_view.png>
 Package pdftex.def Info: images/frustum/frustum_view.png used on input line 84.
 
 (pdftex.def)             Requested size: 192.05609pt x 187.59044pt.
-
+ [22 <./images/frustum/frustum_cubes.png (PNG copy)> <./images/frustum/frustum_
+homogeneous.png (PNG copy)>] [23 <./images/frustum/frustum_view.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[15 <./images/frustum/orto-projection.png> <./images/frustum/persp-projection.p
-ng>] [16 <./images/frustum/frustum_cubes.png (PNG copy)> <./images/frustum/frus
-tum_homogeneous.png (PNG copy)> <./images/frustum/frustum_view.png>]
-<images/frustum/frustum-x.png, id=111, 562.1pt x 461.725pt>
+[24] <images/frustum/frustum-x.png, id=149, 562.1pt x 461.725pt>
 File: images/frustum/frustum-x.png Graphic file (type png)
 
 <use images/frustum/frustum-x.png>
 Package pdftex.def Info: images/frustum/frustum-x.png used on input line 130.
 (pdftex.def)             Requested size: 230.46965pt x 189.31552pt.
-
-
-LaTeX Warning: Reference `frustum-x' on page 17 undefined on input line 134.
-
-[17] <images/frustum/frustum-y.png, id=115, 531.9875pt x 341.275pt>
+ [25 <./images/frustum/frustum-x.png (PNG copy)>] <images/frustum/frustum-y.png
+, id=153, 531.9875pt x 341.275pt>
 File: images/frustum/frustum-y.png Graphic file (type png)
 
 <use images/frustum/frustum-y.png>
 Package pdftex.def Info: images/frustum/frustum-y.png used on input line 144.
 (pdftex.def)             Requested size: 230.46965pt x 147.84415pt.
-
-
-LaTeX Warning: Reference `frustum-y' on page 18 undefined on input line 148.
-
-[18 <./images/frustum/frustum-x.png (PNG copy)>]
-
-LaTeX Warning: Reference `segment' on page 19 undefined on input line 156.
-
-<images/frustum/segment-xz.png, id=120, 431.6125pt x 361.35pt>
+ [26]
+<images/frustum/segment-xz.png, id=158, 431.6125pt x 361.35pt>
 File: images/frustum/segment-xz.png Graphic file (type png)
 
 <use images/frustum/segment-xz.png>
 Package pdftex.def Info: images/frustum/segment-xz.png used on input line 162.
 (pdftex.def)             Requested size: 230.46965pt x 192.94817pt.
- [19 <./images/frustum/frustum-y.png (PNG copy)>] [20 <./images/frustum/segment
+ [27 <./images/frustum/frustum-y.png (PNG copy)>] [28 <./images/frustum/segment
 -xz.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
-
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
-[21] [22]
-
-LaTeX Warning: Reference `view1' on page 23 undefined on input line 243.
-
-
-LaTeX Warning: Reference `view2' on page 23 undefined on input line 243.
-
-[23] <images/frustum/view-matrix1.png, id=138, 757.83125pt x 523.9575pt>
+[30] [31] [32]
+<images/frustum/view-matrix1.png, id=179, 757.83125pt x 523.9575pt>
 File: images/frustum/view-matrix1.png Graphic file (type png)
 
 <use images/frustum/view-matrix1.png>
@@ -827,74 +769,62 @@ Package pdftex.def Info: images/frustum/view-matrix1.png used on input line 247
 .
 (pdftex.def)             Requested size: 192.05609pt x 132.7799pt.
 
-<images/frustum/view-matrix2.png, id=139, 746.79pt x 847.165pt>
+<images/frustum/view-matrix2.png, id=180, 746.79pt x 847.165pt>
 File: images/frustum/view-matrix2.png Graphic file (type png)
 
 <use images/frustum/view-matrix2.png>
 Package pdftex.def Info: images/frustum/view-matrix2.png used on input line 249
 .
 (pdftex.def)             Requested size: 192.05609pt x 217.86626pt.
- [24 <./images/frustum/view-matrix1.png> <./images/frustum/view-matrix2.png>]) 
-(./capitoli/progetto.tex [25]
+ [33] [34 <./images/frustum/view-matrix1.png> <./images/frustum/view-matrix2.pn
+g>] [35]) (./capitoli/progetto.tex
+[36]
 Capitolo 4.
-[26
+[37
 
-]
+] [38]
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
-[27] [28] [29] [30] [31] [32]
-
-LaTeX Warning: Reference `wrong-eye' on page 33 undefined on input line 214.
-
-<images/progetto/ogre-wrong.png, id=173, 1927.2pt x 1084.05pt>
+[39] [40] [41] [42] [43] [44] [45] [46]
+<images/progetto/ogre-wrong.png, id=229, 1927.2pt x 1084.05pt>
 File: images/progetto/ogre-wrong.png Graphic file (type png)
 
 <use images/progetto/ogre-wrong.png>
 Package pdftex.def Info: images/progetto/ogre-wrong.png used on input line 218.
 
 (pdftex.def)             Requested size: 268.87737pt x 151.23665pt.
- [33 <./images/progetto/ogre-wrong.png>]
-
-LaTeX Warning: Reference `no-transl' on page 34 undefined on input line 247.
-
-<images/progetto/ogre-transl.png, id=177, 1927.2pt x 1084.05pt>
+ [47 <./images/progetto/ogre-wrong.png>]
+<images/progetto/ogre-transl.png, id=234, 1927.2pt x 1084.05pt>
 File: images/progetto/ogre-transl.png Graphic file (type png)
 
 <use images/progetto/ogre-transl.png>
 Package pdftex.def Info: images/progetto/ogre-transl.png used on input line 251
 .
 (pdftex.def)             Requested size: 268.87737pt x 151.23665pt.
- [34 <./images/progetto/ogre-transl.png>]
-
-LaTeX Warning: Reference `liv-room' on page 35 undefined on input line 294.
-
-<images/progetto/living-room.png, id=181, 1204.5pt x 853.1875pt>
+ [48] [49 <./images/progetto/ogre-transl.png>] <images/progetto/living-room.png
+, id=241, 1204.5pt x 853.1875pt>
 File: images/progetto/living-room.png Graphic file (type png)
 
 <use images/progetto/living-room.png>
 Package pdftex.def Info: images/progetto/living-room.png used on input line 298
 .
 (pdftex.def)             Requested size: 268.87737pt x 190.44875pt.
- [35]
-
-LaTeX Warning: Reference `transl-liv-room' on page 36 undefined on input line 3
-07.
-
-<images/progetto/living-room-translated.png, id=185, 1204.5pt x 853.1875pt>
+ [50] [51 <./images/progetto/living-room.png (PNG copy)>]
+<images/progetto/living-room-translated.png, id=248, 1204.5pt x 853.1875pt>
 File: images/progetto/living-room-translated.png Graphic file (type png)
 
 <use images/progetto/living-room-translated.png>
 Package pdftex.def Info: images/progetto/living-room-translated.png used on inp
 ut line 311.
 (pdftex.def)             Requested size: 268.87737pt x 190.44875pt.
- [36 <./images/progetto/living-room.png (PNG copy)>]) (./capitoli/risultati.tex
- [37 <./images/progetto/living-room-translated.png (PNG copy)>]
+) (./capitoli/risultati.tex
+[52 <./images/progetto/living-room-translated.png (PNG copy)>]
 Capitolo 5.
-[38
+[53
 
 ]
 Overfull \hbox (13.64752pt too wide) in paragraph at lines 22--23
@@ -902,49 +832,68 @@ Overfull \hbox (13.64752pt too wide) in paragraph at lines 22--23
 T1/cmr/m/it/12 de-tect_multi_scale()
  []
 
-[39] [40]) (./capitoli/conclusioni.tex [41]) [42
+[54] [55] [56] [57]) (./capitoli/conclusioni.tex [58] [59
 
-] (./capitoli/bibliografia.tex) [43
+]) [60]
+(./capitoli/bibliografia.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
+[]\T1/cmr/m/n/12 NUI $\T1/cmtt/m/n/12 http : / / it . wikipedia . org / wiki / 
+Interfaccia _ utente _
+ []
 
-] (./tesi.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+[]$\T1/cmtt/m/n/12 http : / / www . treccani . it / enciclopedia / realta-[]vir
+tuale _
+ []
 
- ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+[]$\T1/cmtt/m/n/12 http : / / en . wikipedia . org / wiki / ViolaViola-[]Jones 
+_ object _
+ []
+
+[61
+
+]) [62] (./tesi.aux) ) 
 Here is how much of TeX's memory you used:
- 5971 strings out of 493304
- 78884 string characters out of 6139871
- 272003 words of memory out of 5000000
- 9257 multiletter control sequences out of 15000+600000
- 19232 words of font info for 45 fonts, out of 8000000 for 9000
+ 6060 strings out of 493304
+ 79935 string characters out of 6139871
+ 247090 words of memory out of 5000000
+ 9336 multiletter control sequences out of 15000+600000
+ 20764 words of font info for 47 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 40i,12n,67p,939b,1064s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfti1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on tesi.pdf (48 pages, 7149323 bytes).
+ 40i,12n,67p,939b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.en
+c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1728.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sftt1200.pfb>
+Output written on tesi.pdf (70 pages, 7171809 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
+ 363 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

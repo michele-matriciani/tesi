@@ -1,10 +1,10 @@
 
 
 \section{OpenCv}
-Opencv (Open Source Computer Vision Library) è una libreria open source che offre funzionalità per applicazioni di computer vision.
+OpenCV (Open Source Computer Vision Library) è una libreria open source che offre funzionalità per applicazioni di computer vision.
 
 \subsection{Storia}
-Il progetto OpenCv è stato lanciato nel 1999 dalla Intel come una parte di varie iniziative volte a sviluppare applicazioni ad alta efficienza.
+Il progetto OpenCv è stato lanciato nel 1999 dalla Intel come una parte di varie iniziative volte a sviluppare applicazioni ad alta efficienza.\cite{opencv1}
 
 La versione alpha è stata rilasciata nel 2000 mentre successivamente sono state rilasciate varie versioni beta; il rilascio della versione 1.0 è avvenuto
 nel 2006.
@@ -36,39 +36,42 @@ In particolare nell'ultimo secolo è stato condotto lo studio degli occhi, dei n
 \end{itemize}
 
 \subsection{Tracking}
-Nel progetto trattato in questa tesi è stato usato il video tracking, per l'individuamento del volto. Il video tracking consiste nell'individuare un oggetto e tracciare il suo movimento, dato un qualsiasi stream video, come la ripresa di una telecamera. I frame del video vengono processati in modo da rilevare nel tempo la posizione dell'oggetto, o degli oggetti in questione. 
+Il video tracking consiste nell'individuare un oggetto e tracciare il suo movimento, dato un qualsiasi stream video, come la ripresa di una telecamera. I frame del video vengono processati in modo da rilevare nel tempo la posizione dell'oggetto, o degli oggetti in questione. 
 
 Il problema maggiore di questa applicazione si riscontra nel calcolare con una buona precisione la posizione dell'oggetto in ogni frame.
 Questo è dovuto a varie motivazioni:
 \begin{itemize}
-\item elevatata velocità dell'oggetto rispetto al frame rate.
+\item elevata velocità dell'oggetto rispetto al frame rate.
 \item qualità della telecamera.
 \item fattori ambientali quali luminosità, presenza di ostacoli o falsi positivi che possono interferire con il tracciamento.
-\item qualità del classificatore utilizzato per riconoscere l'oggetto.
+\item qualità del cascade (“classificatore”) utilizzato per riconoscere l'oggetto.
 \end{itemize}
 
-Tranne le prime due motivazioni, le altre dipendono dal classificatore, un file XML che contiene varie informazioni per riconoscere determinati oggetti in un'immagine. In OpenCv esistono delle funzioni per addestrare classificatori, utilizzando vari algoritmi. L'addestramento richiede una serie di immagini contenenti l'oggetto da rilevare, chiamate positivi, e una serie di immagini che non contengono l'oggetto in questione, chiamate negativi. In base all'algoritmo utilizzato vengono analizzati i positivi per ricavare le somiglianze, inoltre questi sono confrontati con i negativi per evidenziare le differenze.
+Tranne le prime due motivazioni, le altre dipendono dal cascade, un file XML che contiene varie informazioni per riconoscere determinati oggetti in un'immagine. 
 
-Essendo il sistema di riconoscimento non semplice, il processo di addestramento richiede tempi lunghi e una buona qualità e quantità delle immagini, per risultare efficiente. I positivi dovrebbero raffigurare l'oggetto in ogni stato possibile, ovvero visto da ogni angolazione, in ogni sua variante, con presenza di una certa illuminazione, etc. Ad esempio se si vuole addestrare un classificatore per riconoscere volti umani, i positivi dovrebbero raffigurare volti umani di ogni età, sesso, razza, caratteristiche specifiche quali capelli, barba, occhi, etc, e dovrebbero essere inquadrati da ogni angolazione possibile.
+\subsection{Il training del cascade}
+In OpenCV esistono delle funzioni per addestrare classificatori, utilizzando vari algoritmi. Il training (“addestramento”) richiede una serie di immagini contenenti l'oggetto da rilevare, chiamate positivi, e una serie di immagini che non contengono l'oggetto in questione, chiamate negativi. In base all'algoritmo utilizzato vengono analizzati i positivi per ricavare le somiglianze, inoltre questi sono confrontati con i negativi per evidenziare le differenze.
+
+Il processo di training richiede tempi lunghi, in quanto, per produrre buoni cascade, necessita di una grande quantità di immagini di buona qualità. I positivi dovrebbero raffigurare l'oggetto in ogni stato possibile, ovvero visto da ogni angolazione, in ogni sua variante, con presenza di una certa illuminazione, etc. Ad esempio se si vuole addestrare un classificatore per riconoscere volti umani, i positivi dovrebbero raffigurare volti umani di ogni età, sesso, razza, caratteristiche specifiche quali capelli, barba, occhi, etc, e dovrebbero essere inquadrati da ogni angolazione possibile.
 
 Ovviamente più è complesso l'oggetto da riconoscere, e più lungo e dispendioso è il processo di addestramento. Questo processo non è banale, basti pensare che all'inizio del progetto si è cercato di creare un classificatore di mandarini (quindi un oggetto molto semplice) e, utilizzando circa 300 positivi e 2000 negativi, con un addestramendo di una ventina di ore il risultato era di scarsa qualità.
 
 OpenCv offre dei classificatori già addestrati, da utilizzare per le proprie applicazioni.
-Ai fini della nostra applicazione è necessario utilizzare un classificatore per il riconoscimento di volti. Tra i classificatori già addestrati si è scelto di utilizzare il \texttt{haarcascade\_frontalface\_default.xml}, non per motivi di qualità, dato che davano tutti risultati simili, ma perchè si	 è notato da vari esempi trovati in rete che questo è il classificatore più usato.
+%Ai fini della nostra applicazione è necessario utilizzare un classificatore per il riconoscimento di volti. Tra i classificatori già addestrati si è scelto di utilizzare il \texttt{haarcascade\_frontalface\_default.xml}, non per motivi di qualità, dato che davano tutti risultati simili, ma perchè si	 è notato da vari esempi trovati in rete che questo è il classificatore più usato.
 
 \subsection{Face Recognition}
 I classificatori sono addestrati tramite diversi algoritmi; ognuno ha le sue caratteristiche e può produrre risultati diversi, dato uno stesso insieme di input. Per il volto i principali algoritmi sono:
 
 \begin{itemize}
-\item PCA (Principal Component Analysis): due immagini, supponiamo di risoluzione $100\times100$, formano uno spazio di $10.000$ dimensioni, perciò il carico di lavoro per il confronto sarebbe insostenibile.\\
+\item \textit{PCA} (Principal Component Analysis): due immagini, supponiamo di risoluzione $100\times100$, formano uno spazio di $10.000$ dimensioni, perciò il carico di lavoro per il confronto sarebbe insostenibile.\\
 Questo metodo permette di ridurre le dimensioni dello spazio vettoriale prendendo in considerazione solamente le componenti principali, cioè quelle con la massima varianza.
-Queste componenti sono chiamate "eigenfaces", da "eigenvalue" = "autovalore", in quanto il metodo prevede il calcolo di autovettori ed autovalori.\\
+Queste componenti sono chiamate “eigenfaces” (da “eigenvalue” = “autovalore”) in quanto il metodo prevede il calcolo di autovettori ed autovalori.\\
 Il difetto principale di questo metodo è che risente fortemente di rotazioni o traslazioni, ed è influenzato dall'illuminazione e dall'ambiente.
 
-\item LDA (Linear Discriminant Analysis): come nella PCA anche in questo metodo vengono diminuite le dimensioni del sottospazio vettoriale; il miglioramento rispetto al metodo precedente sta nel fatto che le componenti vengono suddivise in classi in cui la varianza è minima. In questo modo classi simili sono vicine tra loro nello spazio vettoriale, mentre classi diverse sono più lontane possibile le une dalle altre. Nella PCA può succedere che alcune componenti importanti vengano scartate in quanto alterate da fattori come la luce o una rotazione del volto. Nel LDA invece, essendo le componenti suddivise in classi, le componenti discriminanti vengono mantenute anche in presenza di piccole alterazioni, e questo permette un riconoscimento più efficiente, anche se il volto è ruotato o non è del tutto visibile alla telecamera.
+\item \textit{LDA} (Linear Discriminant Analysis): come nella PCA anche in questo metodo vengono diminuite le dimensioni del sottospazio vettoriale; il miglioramento rispetto al metodo precedente sta nel fatto che le componenti vengono suddivise in classi in cui la varianza è minima. In questo modo classi simili sono vicine tra loro nello spazio vettoriale, mentre classi diverse sono più lontane possibile le une dalle altre. Nella PCA può succedere che alcune componenti importanti vengano scartate in quanto alterate da fattori come la luce o una rotazione del volto. Nel LDA invece, essendo le componenti suddivise in classi, le componenti discriminanti vengono mantenute anche in presenza di piccole alterazioni, e questo permette un riconoscimento più efficiente, anche se il volto è ruotato o non è del tutto visibile alla telecamera.
 
-\item wavelet: le wavelet ("piccole onde") sono delle funzioni utilizzate specialmente in analisi armonica, che tra i vari scopi,permettono di creare dei  filtri. Una famiglia di queste trasformate, chiamata Haar wavelet, dal suo fondatore Alfred  Haar (1909), ha la caratteristica di avere un dominio compreso tra -1 e 1, con valori interi, ovvero gli unici valori di cui dispone sono 0, -1 e 1.\\
-Viola e Jones introdussero l'utilizzo di queste trasformate nel campo del riconoscimento facciale. L'algoritmo utilizza i cosiddetti Haar-like feature per riconoscere zone con determinate caratteristiche in un'immagine.\\
+\item \textit{Wavelet}: le wavelet (“piccole onde”) sono delle funzioni utilizzate specialmente in analisi armonica, che tra i vari scopi,permettono di creare dei  filtri. Una famiglia di queste trasformate, chiamata Haar wavelet, dal suo creatore Alfred  Haar (1909)\cite{haar-wavelet}, ha la caratteristica di avere un dominio compreso tra -1 e 1, con valori interi, ovvero gli unici valori di cui dispone sono 0, -1 e 1.\\
+Paul Viola e Michael Jones \cite{viola-jones} introdussero l'utilizzo di queste trasformate nel campo del riconoscimento facciale. Il loro sistema utilizza i cosiddetti Haar-like feature per riconoscere zone con determinate caratteristiche in un'immagine\cite{haar-features}.\\
 Un' Haar-like feature è un rettangolo suddiviso in diverse aree, in modo da formare un pattern da riconoscere nell'immagine. Ogni feature rappresenta la differenza della somma dei pixel delle varie regioni nel rettangolo. Nel processo di addestramento si parte con delle feature di base, per riconoscere semplici spigoli o contorni. Nella figura \ref{features} si possono osservare alcuni tipi di feature di base.\\
 \begin{figure}[htbp]
 \centering
@@ -92,3 +95,4 @@ OpenCv offre dei metodi, come \texttt{detect\_multiscale()}, che permettono di r
 
 
 \end{itemize}
+\clearpage

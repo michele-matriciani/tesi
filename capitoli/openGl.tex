@@ -7,17 +7,17 @@
 \end{figure}
 
 
-OpenGL (Open Graphics Library) è un'interfaccia che offre procedure per scrivere applicazioni di grafica 2D e 3D. Questa API è stata introdotta nel 1992 dalla società californiana Silicon Graphics, è nata in ambiente Unix e poi è stata resa multipiattaforma. OpenGL è usato per vari tipi di applicazioni, come videogiochi, realtà virtuale, animazioni e simulazioni 3D.
+OpenGL (Open Graphics Library) è una specifica che definisce un'API (“Application Programming Interface”, “interfaccia di programmazione per applicazioni”) che fornisce metodi per sviluppare applicazioni di grafica 2D e 3D \cite{opengl-wiki}. E' stata introdotta nel 1992 dalla società californiana Silicon Graphics, è nata in ambiente Unix e, successivamente, è stata resa multipiattaforma. La libreria OpenGL è usata per vari tipi di applicazioni, come animazioni, videogiochi, simulazioni 3D e di realtà virtuale.
 
-Ogni scheda grafica usa un linguaggio proprio, perciò, onde evitare problemi di compatibilità, le applicazioni dovrebbero disporre di più implementazioni, per essere eseguite sotto ogni tipo di acceleratore grafico. Il vantaggio di sfruttare API come OpenGL sta nel fatto che questa difficoltà è superata poichè offrono un'interfaccia che permette al programmatore di utilizzare un linguaggio unico per comunicare in modo rapido ed efficiente con l'hardware. Oramai quasi la totalità delle schede grafiche supporta OpenGL, perciò è possibile nascondere tutta la complessità di interfacciamento utilizzando questa API; in questo modo è possibile sfruttare appieno l'accelerazione grafica ed ottenere le massime prestazioni nel rendering delle scene.
+Una specifica è un documento che descrive un insieme di funzioni ed il comportamento preciso che queste devono avere. I maggiori produttori hardware (Nvidia, AMD, Intel, etc) creano implementazioni di queste funzioni rispettando la specifica OpenGL, usando l'accelerazione hardware quando possibile. In questo modo il programmatore può usufruire di un'API unificata, utilizzando le funzioni senza preoccuparsi della loro implementazione.
 
-
+Un'altra caratteristica fondamentale è che le funzioni di OpenGL devono essere sempre usufruibili, quindi le implementazioni richiedono un'emulazione software quando l'hardware non è in grado di fornire certe funzionalità.
 
 \subsection{Il funzionamento di OpenGL}
-OpenGL offre circa 250 chiamate di funzione per disegnare scene a due o tre dimensioni, a partire da delle primitive. Con primitive si intendono punti, linee e poligoni, i quali vengono convertiti in pixel tramite una serie di processi chiamata pipeline grafica.
+OpenGL offre circa 250 chiamate di funzione per disegnare scene a due  o tre dimensioni, a partire da delle primitive. Con primitive si intendono punti, linee e poligoni, i quali vengono convertiti in pixel tramite una serie di processi chiamata pipeline grafica.
 La pipeline rappresenta una catena di trasformazioni e operazioni, in cui ogni fase prende in input il risultato della fase precedente e produce l'output per la fase successiva.
 
-OpenGl opera a basso livello e richiede al programmatore di rispettare i passi precisi della pipeline che servono a renderizzare la scena. Tra i passi principali da seguire sono presenti :
+OpenGL opera a basso livello e richiede al programmatore di rispettare i passi precisi della pipeline che servono a renderizzare la scena. Tra i passi principali da seguire sono presenti :
 
 \begin{itemize}
 \item fornire le primitive che descrivano la scena.
@@ -27,4 +27,6 @@ OpenGl opera a basso livello e richiede al programmatore di rispettare i passi p
 
 Queste regole vanno definite in particolari file chiamati "shader", scritti in un linguaggio ad alto livello proprio di OpenGL, basato sul linguaggio C, chiamato GLSL ("OpenGL Shading Language"). Siccome la scena non può essere renderizzata senza aver fornito le regole basilari, è necessaria, da parte del programmatore, una buona conoscenza della suddetta pipeline grafica e del linguaggio GLSL.
 
-Esistono anche API che operano ad alto livello, le quali nascondono al programmatore le fasi più complesse del rendering, gestendole automaticamente, e richiedono solamente una descrizione generica della scena. Un'esempio è il framework Ogre3D, trattato in seguito.
+Esistono anche framework che operano ad alto livello, i quali nascondono al programmatore le fasi più complesse del rendering, gestendole autonomamente, e richiedono solamente una descrizione generica della scena. Un'esempio è il framework Ogre3D, trattato in seguito.
+
+\clearpage
