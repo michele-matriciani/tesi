@@ -151,36 +151,7 @@ Possiamo calcolare l'angolo di apertura verticale $\beta$ come: $$\beta=2\tan^{-
 
 Possiamo assegnare arbitrariamente un valore $n$ come coordinata per il near plane, in modo da determinare la distanza da cui inizia il frustum. Le coordinate dei quattro piani ora devono essere ricalcolate come $$x =\pm \frac{n}{e}$$ e $$y = \pm \frac{an}{e}$$.
 
-\subsection{Interpolazione}
 
-Consideriamo il piano $xz$ e il segmento formato dai punti $(x_1,z_1)$  e $(x_2,z_2)$ (vedi figura \ref{segment}).
-
-Definiamo l'equazione della retta sulla quale giace il segmento come $$ax+bz=c$$ supponendo che non passi per l'origine, cioè con $c\ne0$. Tracciamo le rette (cioè le proiezioni) che congiungono l'origine (dove sta la telecamera) con i due punti, come in figura.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.6\textwidth]{images/frustum/segment-xz.png}
-\caption{Un segmento nel frustum proiettato sul near plane.\label{segment}}
-\end{figure}
-
-Le due rette intersecano il piano di proiezione nei punti $(p_1,-e)$ e $(p_2,-e)$ (si usa il segno meno in quanto $e$ è la distanza tra l'origine e il piano di proiezione, situato lungo l'asse negativo delle $z$).
-
-Per provare che la proiezione è valida, dimostriamo che tutti i punti compresi nel segmento iniziale siano interpolati correttamente nel segmento proiettato.
-
-Il triangolo rettangolo formato dai punti $\{O,(0,-e),(p_1,-e)\}$ è simile a quello formato dai punti $\{O,(0,z_1),(x_1,z_1)\}$, in quanto hanno tre angoli congruenti. Lo stesso vale per gli altri due triangoli, comprendenti i punti $(x_2,z_2)$ e $(p_2,-e)$.
-
-Possiamo definire la relazione derivata dalla proprietà dei triangoli simili $$\frac{p}{x}=\frac{-e}{z}$$
-Mettiamo in evidenza x $$x=\frac{pz}{-e}$$
-e sostituiamo la x nell'equazione precedente della retta $$\left(-\frac{ap}{e}+b\right) z=c$$
-Mettiamo in evidenza la quantità $1/z$ $$\frac{1}{z}=-\frac{ap}{ce}+\frac{b}{c}$$
-Consideriamo il punto generico $(p_3,-e)$ compreso tra $(p_1,-e)$ e $(p_2,-e)$; possiamo esprimere $p_3=(1-t)p_1+tp_2$ con $0\leq t\leq 1$. 
-Riprendendendo la relazione precedente scriviamo $$\frac{1}{z_3}=-\frac{ap_3}{ce}+\frac{b}{c}$$
-Sostituendo $p_3$ con la precedente uguaglianza e facendo qualche passaggio otteniamo: $$\frac{1}{z_3}=-\frac{ap_1}{ce}(1-t)-\frac{ap_2}{ce}t+\frac{b}{c}$$\\
-Poichè $(1-t)+t=1$, possiamo sostituire $\frac{b}{c}$ con $\frac{b}{c}(1-t+t)=\frac{b}{c}(1-t)+\frac{b}{c}(t)$.\\
-Raccogliendo i termini simili scriviamo $$\left(-\frac{ap_1}{ce}+\frac{b}{c}\right)(1-t)+\left(-\frac{ap_2}{ce}+\frac{b}{c}\right)t$$
-Perciò 
-$$\frac{1}{z}=\frac{1}{z_1}(1-t)+\frac{1}{z_2}t$$
-Con ciò abbiamo dimostrato che anche il reciproco di z è interpolato correttamente.\\
 
 \subsection{Projection Matrix}
 Come abbiamo detto all'inizio del capitolo, per renderizzare a schermo un punto tridimensionale, esso deve essere trasformato in un punto a due dimensioni. Il sistema di coordinate omogenee,  che si utilizza per identificare i punti nello spazio, possiede quattro dimensioni. La projection matrix lo trasforma in un sistema a tre dimensioni, proiettando lo spazio omogeneo in uno spazio 3D chiamato canonical view volume (un cubo).
